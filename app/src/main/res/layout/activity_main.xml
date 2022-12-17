@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/personaldetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="WELCOME TO RESUME BUILDER !"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add your information and prepare your resume"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="1. PERSONAL INFORMATION"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="42dp"
+        android:drawableLeft="@drawable/person"
+        android:padding="10dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Nametext"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/Nametext"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dobtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Nametext"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/dateofbirth"
+        android:padding="10dp"
+        android:text="DOB"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/dobtext"
+        android:layout_alignLeft="@id/name"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/dobtext"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:hint="DOB"
+        android:inputType="date"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dobtext"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="62dp"
+        android:drawableLeft="@drawable/email"
+        android:padding="10dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_alignBaseline="@id/emailtext"
+        android:padding="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#30ffffff"
+        android:hint="email address"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:layout_toEndOf="@+id/emailtext"
+        android:layout_alignLeft="@id/name"/>
+
+    <TextView
+        android:id="@+id/addrtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailtext"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="62dp"
+        android:drawableLeft="@drawable/address"
+        android:padding="10dp"
+        android:text="Address"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/addrtext"
+        android:layout_alignLeft="@id/name"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/addrtext"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:hint="Postal address"
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addrtext"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="-169dp"
+        android:layout_toStartOf="@+id/addr"
+        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Next" />
+
+</RelativeLayout>

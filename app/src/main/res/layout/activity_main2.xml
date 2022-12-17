@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/gradient"
+    android:id="@+id/educationalaldetails">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="RESUME BUILDER"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="2. EDUCATIONAL DETAILS"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/qualificationtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/education"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="42dp"
+        android:drawableLeft="@drawable/qualifications"
+        android:padding="10dp"
+        android:text="Qualification"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/qualification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/qualificationtext"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/qualificationtext"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:hint="Qualification"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/percentagetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qualificationtext"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/percent"
+        android:padding="10dp"
+        android:text="Percentage"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/percentagetext"
+        android:layout_alignLeft="@id/qualification"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/percentagetext"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:hint="Overall Percentage"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Collegetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/percentagetext"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="58dp"
+        android:drawableLeft="@drawable/university"
+        android:padding="10dp"
+        android:text="College"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/college"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Collegetext"
+        android:layout_alignLeft="@id/qualification"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/Collegetext"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:hint="College Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-177dp"
+        android:layout_marginBottom="199dp"
+        android:layout_toStartOf="@+id/college"
+        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:padding="10dp"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/previous1"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/next1"
+        android:layout_alignTop="@+id/next1"
+        android:layout_alignBottom="@+id/next1"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_toStartOf="@+id/next1"
+        android:background="@color/purple_500"
+        android:padding="10dp"
+        android:text="Previous" />
+
+
+</RelativeLayout>

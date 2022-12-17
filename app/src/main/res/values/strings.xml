@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Resume Builder</string>
+    <string name="welcome_to_resume_builder">Welcome to Resume Builder</string>
+    <string name="WELCOME_TO_RESUME_BUILDER" />
+</resources>
